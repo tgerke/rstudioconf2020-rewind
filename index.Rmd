@@ -130,6 +130,17 @@ class: talks-two
 ---
 class: talks-three
 
+---
+layout: false
+
+### BUT ALL THE TALKS ARE FREELY AVAILABLE &#x1F92F;
+
+Here: [https://resources.rstudio.com/rstudio-conf-2020](https://resources.rstudio.com/rstudio-conf-2020)
+
+.h-center.w-85[
+![](figures/talkgrid.png)
+]
+
 <!--
 heatmap redesign:
 https://resources.rstudio.com/rstudio-conf-2020/effective-visualizations-miriah-meyer
