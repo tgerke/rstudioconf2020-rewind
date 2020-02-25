@@ -24,6 +24,8 @@ knitr::opts_chunk$set(
   fig.width = 10, fig.height = 6, fig.retina = 2,
   warning = FALSE, message = FALSE
 )
+
+xaringanExtra::use_xaringan_extra(c("animate_css"))
 ```
 
 class: center middle hide-count hide-logo
@@ -75,6 +77,65 @@ An integrated development environment (IDE) for R
 ]
 
 ---
+### rstudio::conf
+
+The most useful/inspirational annual conference I attend
+* Begins with 2-day workshops (below + [link](https://github.com/rstudio-conf-2020)), followed by 2-day conference
+.h-center.w-45[
+![](figures/workshops.png)
+]
+
+---
+### rstudio::conf talks
+
+Generally organized into tracks, which include:
+* Learning/using R
+* Professional/organizational thinking
+* Community
+* Pharma/medicine
+* Programming
+* Education
+* Communication (.one[R Markdown] + .three[Shiny])
+* .two[Visualization]
+
+.h-right-decide[
+![](figures/decide.gif)
+]
+
+---
+layout: true
+class: talks animated fadeIn
+
+### rstudio::conf talks
+
+Generally organized into tracks, which include:
+* Learning/using R
+* Professional/organizational thinking
+* Community
+* Pharma/medicine
+* Programming
+* Education
+* Communication (.one[R Markdown] + .three[Shiny])
+* .two[Visualization]
+
+---
+class: full 
+
+---
+class: talks-one
+
+---
+class: talks-two
+
+---
+class: talks-three
+
+<!--
+heatmap redesign:
+https://resources.rstudio.com/rstudio-conf-2020/effective-visualizations-miriah-meyer
+
+
+-->
 
 ```{css, echo=FALSE}
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
@@ -168,6 +229,9 @@ An integrated development environment (IDE) for R
 .w-25 {
   width: 25%;
 }
+.w-45 {
+  width: 45%;
+}
 .w-50 {
   width: 50%;
 }
@@ -200,6 +264,22 @@ An integrated development environment (IDE) for R
   top: 0%;
   width: 15%;
   right: 3%;
+}
+.h-right-decide {
+  position: absolute;
+  top: 20%;
+  width: 35%;
+  right: 3%;
+}
+
+.talks:not(.full) {
+  color: #aaa;
+}
+
+.talks-one .one,
+.talks-two .two,
+.talks-three .three {
+  color: #eb1455;
 }
 
 ```
