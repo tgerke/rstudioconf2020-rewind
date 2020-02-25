@@ -34,7 +34,7 @@ background-position: center
 <div class="talk-logo swivel-horizontal"></div>
 
 .talk-title[
-.talk-title-main.moffitt-blue[A rewind for academic newcomers]
+.talk-title-main.moffitt-blue[:::a rewind for academic newcomers:::]
 ]
 
 .talk-meta[
@@ -47,6 +47,8 @@ background-position: center
 ---
 
 ```{css, echo=FALSE}
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
+
 .talk-logo {
   width: 1000px;
   height: 200px;
@@ -61,12 +63,13 @@ background-position: center
   font-family: Overpass;
 }
 .talk-title .talk-title-main {
+  font-family: 'Merriweather', serif;
   font-size: 1em;
   font-weight: bold;
   position: absolute;
   bottom: 5%;
   right: 2;
-  width: 65%;
+  width: 55%;
 }
 .talk-title .talk-title-sub {
   font-size: 1.28em;

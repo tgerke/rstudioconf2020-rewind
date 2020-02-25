@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
   <head>
     <title>rstudio::conf 2020 rewind</title>
     <meta charset="utf-8" />
@@ -20,7 +20,7 @@ background-position: center
 &lt;div class="talk-logo swivel-horizontal"&gt;&lt;/div&gt;
 
 .talk-title[
-.talk-title-main.moffitt-blue[A rewind for academic newcomers]
+.talk-title-main.moffitt-blue[:::a rewind for academic newcomers:::]
 ]
 
 .talk-meta[
@@ -33,6 +33,8 @@ background-position: center
 ---
 
 &lt;style type="text/css"&gt;
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300');
+
 .talk-logo {
   width: 1000px;
   height: 200px;
@@ -47,12 +49,13 @@ background-position: center
   font-family: Overpass;
 }
 .talk-title .talk-title-main {
+  font-family: 'Merriweather', serif;
   font-size: 1em;
   font-weight: bold;
   position: absolute;
   bottom: 5%;
   right: 2;
-  width: 65%;
+  width: 55%;
 }
 .talk-title .talk-title-sub {
   font-size: 1.28em;
@@ -185,24 +188,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 (function() {
