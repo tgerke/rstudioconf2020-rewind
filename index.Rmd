@@ -45,6 +45,36 @@ background-position: center
 ]
 
 ---
+### What is R?
+
+A programming language and free software for statistical computing and graphics 
+* The R community drives its greatest superpower: user-submitted packages
+* Looks like below (&#x1F62C; &#x1F605;)
+
+.top-right-r[
+![](figures/Rlogo.svg)
+]
+
+.h-center.w-70[
+![](figures/rconsole.png)
+]
+
+---
+### What is RStudio?
+
+An integrated development environment (IDE) for R
+* Most often appears as a desktop application like below (&#x1F485;)
+* Can also run in a browser via RStudio Server
+
+.top-right-rstudio[
+![](figures/RStudio-Logo-flat.svg)
+]
+
+.h-center.w-65[
+![](figures/rstudioconsole.png)
+]
+
+---
 
 ```{css, echo=FALSE}
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
@@ -68,8 +98,8 @@ background-position: center
   font-weight: bold;
   position: absolute;
   bottom: 5%;
-  right: 2;
-  width: 55%;
+  right: 0%;
+  width: 50%;
 }
 .talk-title .talk-title-sub {
   font-size: 1.28em;
@@ -141,6 +171,12 @@ background-position: center
 .w-50 {
   width: 50%;
 }
+.w-65 {
+  width: 65%;
+}
+.w-70 {
+  width: 70%;
+}
 .w-85 {
   width: 85%;
 }
@@ -151,6 +187,19 @@ background-position: center
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-right-r {
+  position: absolute;
+  top: 0%;
+  width: 8%;
+  right: 3%;
+}
+.top-right-rstudio {
+  position: absolute;
+  top: 0%;
+  width: 15%;
+  right: 3%;
 }
 
 ```
