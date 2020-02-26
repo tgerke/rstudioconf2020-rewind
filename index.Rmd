@@ -86,23 +86,6 @@ The most useful/inspirational annual conference I attend
 ]
 
 ---
-### rstudio::conf talks
-
-Generally organized into tracks, which include:
-* Learning/using R
-* Professional/organizational thinking
-* Community
-* Pharma/medicine
-* Programming
-* Education
-* Communication (.one[R Markdown] + .three[Shiny])
-* .two[Visualization]
-
-.h-right-decide[
-![](figures/decide.gif)
-]
-
----
 layout: true
 class: talks animated fadeIn
 
@@ -122,6 +105,11 @@ Generally organized into tracks, which include:
 class: full 
 
 ---
+.h-right-decide[
+![](figures/decide.gif)
+]
+
+---
 class: talks-one
 
 ---
@@ -133,7 +121,7 @@ class: talks-three
 ---
 layout: false
 
-### BUT ALL THE TALKS ARE FREELY AVAILABLE &#x1F92F;
+### ALL THE TALKS ARE FREELY AVAILABLE &#x1F92F;
 
 Here: [https://resources.rstudio.com/rstudio-conf-2020](https://resources.rstudio.com/rstudio-conf-2020)
 

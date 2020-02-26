@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
   <head>
     <title>rstudio::conf 2020 rewind</title>
     <meta charset="utf-8" />
@@ -71,23 +71,6 @@ The most useful/inspirational annual conference I attend
 ]
 
 ---
-### rstudio::conf talks
-
-Generally organized into tracks, which include:
-* Learning/using R
-* Professional/organizational thinking
-* Community
-* Pharma/medicine
-* Programming
-* Education
-* Communication (.one[R Markdown] + .three[Shiny])
-* .two[Visualization]
-
-.h-right-decide[
-![](figures/decide.gif)
-]
-
----
 layout: true
 class: talks animated fadeIn
 
@@ -107,6 +90,11 @@ Generally organized into tracks, which include:
 class: full 
 
 ---
+.h-right-decide[
+![](figures/decide.gif)
+]
+
+---
 class: talks-one
 
 ---
@@ -118,7 +106,7 @@ class: talks-three
 ---
 layout: false
 
-### BUT ALL THE TALKS ARE FREELY AVAILABLE &amp;#x1F92F;
+### ALL THE TALKS ARE FREELY AVAILABLE &amp;#x1F92F;
 
 Here: [https://resources.rstudio.com/rstudio-conf-2020](https://resources.rstudio.com/rstudio-conf-2020)
 
@@ -327,7 +315,24 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 (function() {
